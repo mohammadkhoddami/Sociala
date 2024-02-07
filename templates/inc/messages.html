@@ -1,0 +1,8 @@
+{% if messages %}
+{% for message in messages %}
+<div class = 'col-md-6'>
+<p class = 'alert alert-{{ message.tags }}'> {{ message }} </p>
+</div>
+{% endfor %}
+{% else %}
+{% endif %}
